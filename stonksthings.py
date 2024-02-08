@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.express as px
 
 def display_all_csv_graph():
-    folder_path = "C:/Users/Humza.Hussain/OneDrive - Ada National College for Digital Skills/Desktop/Group8_Development/ALL CSV/"
+    folder_path = "(YOUR DIRECTORY HERE)"
     all_files = os.listdir(folder_path)
     combined_df = pd.DataFrame()
 
@@ -30,7 +30,7 @@ def display_all_csv_graph():
     fig.show()
     
 def display_csv_graph(file_name):
-    file_path = "C:/Users/Humza.Hussain/OneDrive - Ada National College for Digital Skills/Desktop/Group8_Development/ALL CSV/" + file_name + ".csv"
+    file_path = "(YOUR DIRECTORY HERE)" + file_name + ".csv"
 
     if not os.path.exists(file_path):
         messagebox.showerror("Error", f"File {file_name}.csv not found.")
@@ -60,7 +60,7 @@ def display_csv_graph_clicked():
     display_csv_graph(file_name)
 
 def display_csv_table(file_name):
-    file_path = "C:/Users/Humza.Hussain/OneDrive - Ada National College for Digital Skills/Desktop/Group8_Development/ALL CSV/" + file_name + ".csv"
+    file_path = "(YOUR DIRECTORY HERE)" + file_name + ".csv"
 
     if not os.path.exists(file_path):
         messagebox.showerror("Error", f"File {file_name}.csv not found.")
@@ -107,7 +107,7 @@ def display_csv_table_clicked():
     display_csv_table(file_name)
 
 def clean_csv_file(file_name):
-    file_path = "C:/Users/Humza.Hussain/OneDrive - Ada National College for Digital Skills/Desktop/Group8_Development/ALL CSV/" + file_name + ".csv"
+    file_path = "(YOUR DIRECTORY HERE)" + file_name + ".csv"
 
     if not os.path.exists(file_path):
         messagebox.showerror("Error", f"File {file_name}.csv not found.")
